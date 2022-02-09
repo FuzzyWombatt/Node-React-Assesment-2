@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+@font-face {
+    font-family: 'Auto-techno';
+    src: local('Auto-techno'), url('./resources/fonts/auto-techno/auto-techno.ttf') format('truetype');
+};
+
+@font-face {
+    font-family: 'Equinox';
+    src: local('Equinox'), url('./resources/fonts/equinox/Equinox\ Regular.woff') format('woff');
+};
+
+@font-face {
+    font-family: 'Equinox-bold';
+    src: local('Equinox-bold'), url('./resources/fonts/equinox/Equinox\ Bold.woff') format('woff');
+};
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+@layer utilities {
+    .w-640 {
+        width: 640px
+    }
+}
